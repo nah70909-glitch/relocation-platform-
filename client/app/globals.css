@@ -1,0 +1,96 @@
+/* ============================================================
+   GLOBAL STYLES — ReloCity Design System
+   ============================================================
+   Custom styles on top of Tailwind CSS.
+   Defines fonts, animations, and utility classes.
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   CUSTOM ANIMATIONS
+   ============================================================ */
+@layer utilities {
+  /* Slide down animation for mobile menu */
+  .animate-slideDown {
+    animation: slideDown 0.2s ease-out;
+  }
+
+  /* Fade in animation for page content */
+  .animate-fadeIn {
+    animation: fadeIn 0.4s ease-out;
+  }
+
+  /* Slide up animation for cards */
+  .animate-slideUp {
+    animation: slideUp 0.5s ease-out;
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400;
+  }
+}
+
+/* ============================================================
+   COMPONENT STYLES
+   ============================================================ */
+@layer components {
+  /* Glass card effect */
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+
+  /* Gradient text utility */
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent;
+  }
+
+  /* Hero gradient background */
+  .hero-gradient {
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 50%, #1e1b4b 100%);
+  }
+}
