@@ -2,7 +2,9 @@
 
 A modern full-stack web application that helps users relocating to a new city explore city guides, discover housing, schools, hospitals, search services, and connect with verified providers.
 
-![ReloCity](https://img.shields.io/badge/ReloCity-v1.0-blue) ![Next.js](https://img.shields.io/badge/Next.js-14-black) ![Express](https://img.shields.io/badge/Express-4.x-green) ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-brightgreen)
+🌐 **Live Demo:** [https://roaring-buttercream-fef02a.netlify.app/](https://roaring-buttercream-fef02a.netlify.app/)
+
+![ReloCity](https://img.shields.io/badge/ReloCity-v1.0-blue) ![Next.js](https://img.shields.io/badge/Next.js-14-black) ![Express](https://img.shields.io/badge/Express-4.x-green) ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-brightgreen) [![Netlify Status](https://img.shields.io/badge/Netlify-Deployed-00C7B7?logo=netlify)](https://roaring-buttercream-fef02a.netlify.app/)
 
 ## 🚀 Features
 
